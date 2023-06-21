@@ -14,5 +14,12 @@ To export your key and encrypt with another key, use the following command:
 ```bash
 gpg --export-secret-key lordvadr@futurology.social | \
     gpg -ear you@somewhere.com -r someotherkey@somewherelse.com \
-    > lordvadr-gpg-key
+    > you@youremail.wherever.priv
+```
+
+
+To export your public key for use in the automation, use:
+
+```bash
+gpg -a --export lordvadr@futurology.social > lordvadr@futurology.social.pub
 ```
